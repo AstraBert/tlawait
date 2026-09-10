@@ -1,0 +1,28 @@
+[project]
+name = "tlawait"
+version = "0.1.0"
+description = "Run python script with top-level await syntax"
+readme = "README.md"
+authors = [
+    { email = "astraberte9@gmail.com" }
+]
+requires-python = ">=3.10,<4"
+dependencies = []
+
+[project.scripts]
+tlawait = "tlawait:main"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "aiofiles>=25.1.0",
+    "aiosqlite>=0.22.1",
+    "httpx>=0.28.1",
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+    "ruff>=0.16.6",
+    "ty>=0.0.80",
+]

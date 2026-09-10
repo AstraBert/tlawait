@@ -1,0 +1,6 @@
+lint="uv run ruff check"
+lint-fix="uv run ruff check --fix"
+format="uv run ruff format --check"
+format-fix="uv run ruff format"
+test="uv run pytest tests"
+ty="uv run ty check src/"
