@@ -16,6 +16,10 @@ uv tool install .
 
 ## Usage
 
+> If you want `tlawait` to pick up your venv depdencies,
+> you will need to install it inside the virtual environment
+> through `uv pip install` or `uv add --dev` (as a dev dependency)
+
 Run a script with `tlawait`:
 
 ```bash
