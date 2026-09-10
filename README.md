@@ -5,7 +5,9 @@ Python scripts executor that allows for top-level awaits.
 ## Installation
 
 ```bash
-uv tool install tlawait
+# add it as a dependency in your virtual environment
+uv pip install tlawait
+uv add --dev tlawait
 # or, from source
 git clone https://github.com/AstraBert/tlawait
 cd tlawait
@@ -17,7 +19,7 @@ uv tool install .
 Run a script with `tlawait`:
 
 ```bash
-tlawait script.py
+uv run tlawait script.py
 ```
 
 `tlawait` is designed to run standalone scripts that do not require passing CLI options (specifically tutorials translated from notebooks).
