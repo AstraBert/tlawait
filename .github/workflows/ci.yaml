@@ -23,11 +23,11 @@ jobs:
 
       - name: Run formatter
         shell: bash
-        run: jake format-check
+        run: jake format
 
       - name: Run linter
         shell: bash
-        run: jake lint-check
+        run: jake lint
 
       - name: Run typecheck
         shell: bash
